@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODLINFO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">HODLINFO</div>
+        <div class="header-center">
+          <select>
+            <option id="currency">INR</option>
+          </select>
+          <select id="crypto">
+            <option>BTC</option>
+            <option>ETH</option>
+            <option>USDT</option>
+            <option>XRP</option>
+            <option>TRX</option>
+            <option>DASH</option>
+            <option>ZEC</option>
+            <option>XEM</option>
+            <option>IOST</option>
+            <option>WIN</option>
+            <option>BTT</option>
+            <option>WRX</option>
+          </select>
+          <button id="buyButton" class="buy-btn">Buy BTC</button>
+        </div>
+        <div class="header-right">
+          <button class="connect-btn">Connect Telegram</button>
+          <div class="timer" id="timer">60</div>
+        </div>
+      </header>
+
+      <div class="best-price">
+        <div>Best Price to Trade</div>
+        <div class="best-price-value">₹ <span id="best-price">0</span></div>
+        <div>Average BTC/INR net price including commission</div>
+      </div>
+
+      <table id="ticker-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Difference</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody id="ticker-body"></tbody>
+      </table>
+
+      <div class="footer">Copyright © 2019 HodlInfo.com</div>
+    </div>
+    <script src="./script.js">
+     </script>
+  </body>
+</html>
